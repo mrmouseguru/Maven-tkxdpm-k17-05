@@ -1,4 +1,4 @@
 
 public interface InputInterface {
-	InputData input();
+	void execute(InputData inData);
 }

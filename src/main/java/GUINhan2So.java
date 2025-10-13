@@ -32,9 +32,22 @@ public class GUINhan2So extends JFrame{
 					
 					@Override
 					public void actionPerformed(ActionEvent e) {
-						//submit
-						//JOptionPane.showMessageDialog(null, "Hello");
-						//lấy num1 và num2 từ tf1 và tf2
+						InputDTO inDTO = new InputDTO();
+						inDTO.num1 = tf1.getText();
+						inDTO.num2 = tf2.getText();
+						Nhan2So n2so = new Nhan2So();
+						Nhan2SoViewModel model = new Nhan2SoViewModel();
+						Nhan2SoPresenter presenter = new Nhan2SoPresenter(model);
+						Nhan2SoUseCaseControl uc = new 
+								Nhan2SoUseCaseControl(presenter, n2so);
+						
+						Nhan2SoController controller =
+								new Nhan2SoController(uc);
+						controller.execute(inDTO);
+						
+						JOptionPane.showMessageDialog(null, "Result: " + model.result);//View
+						
+						
 						
 					}
 				}
