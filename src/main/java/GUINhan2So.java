@@ -45,8 +45,9 @@ public class GUINhan2So extends JFrame{
 								new Nhan2SoController(uc);
 						controller.execute(inDTO);
 						
-						JOptionPane.showMessageDialog(null, "Result: " + model.result);//View
-						
+						GUIViewOutput view = new GUIViewOutput();
+						model.subscribe(view);
+						model.notifySubscribers(model.result);
 						
 						
 					}
@@ -59,9 +60,5 @@ public class GUINhan2So extends JFrame{
 		///setSize(400, 400);
 		setLocationRelativeTo(null);
 		setVisible(true);
-	}
-	
-	public static void main(String[] args) {
-		GUINhan2So n2so = new GUINhan2So();
 	}
 }
