@@ -1,3 +1,4 @@
+package adapters;
 
 public class InputDTO {
 	public String num1;

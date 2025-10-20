@@ -1,3 +1,4 @@
+package nhan2so;
 
 public class OutputData {
 	

@@ -1,3 +1,7 @@
+package adapters;
+
+import nhan2so.InputData;
+import nhan2so.InputInterface;
 
 public class Nhan2SoController {
 	private InputInterface inBoundary;

@@ -1,3 +1,7 @@
+package adapters;
+
+import nhan2so.OutputData;
+import nhan2so.OutputInterface;
 
 public class Nhan2SoPresenter implements OutputInterface{
 	private Nhan2SoViewModel model;
