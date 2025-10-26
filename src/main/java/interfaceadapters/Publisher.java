@@ -1,10 +1,9 @@
-package adapters;
+package interfaceadapters;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import frameworks.desktop.Subscriber;
-
 
 public class Publisher {
 	private List<Subscriber> subscribers = new ArrayList<>();
@@ -13,18 +12,13 @@ public class Publisher {
 		subscribers.add(sub);
 	}
 
-	 public void removeSubscriber(Subscriber sub) {
-		 subscribers.remove(sub);
-	 }
+	public void removeSubscriber(Subscriber sub) {
+		subscribers.remove(sub);
+	}
 	 
-	 public void notifySubscribers() {
-		 
-		 for (Subscriber subscriber : subscribers) {
-			 
-			 subscriber.update();
-			
+	public void notifySubscribers() {
+		for (Subscriber subscriber : subscribers) {
+			subscriber.update();
 		}
-		 
-	 }
-
+	}
 }

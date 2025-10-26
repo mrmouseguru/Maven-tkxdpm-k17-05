@@ -1,4 +1,4 @@
-package nhan2so;
+package entities.nhan2so;
 
 public class Nhan2So {
 	private int number1;
@@ -14,7 +14,7 @@ public class Nhan2So {
 	}
 
 
-	int nhan2So() {
+	public int nhan2So() {
 		return  number1 * number2;
 	}
 
@@ -25,6 +25,4 @@ public class Nhan2So {
 	public void setNumber2(int number2) {
 		this.number2 = number2;
 	}
-	
-	
 }

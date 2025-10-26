@@ -1,4 +1,4 @@
-package nhan2so;
+package usecases.cong2so;
 
 public class InputData {
 	public int num1;
@@ -8,7 +8,4 @@ public class InputData {
 		this.num1 = num1;
 		this.num2 = num2;
 	}
-	
-	
-
 }

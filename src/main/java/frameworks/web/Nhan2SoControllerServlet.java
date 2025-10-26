@@ -2,19 +2,18 @@ package frameworks.web;
 
 import java.io.IOException;
 
-import adapters.InputDTO;
-import adapters.Nhan2SoController;
-import adapters.Nhan2SoPresenter;
-import adapters.Nhan2SoViewModel;
+import interfaceadapters.nhan2so.InputDTO;
+import interfaceadapters.nhan2so.Nhan2SoPresenter;
+import interfaceadapters.nhan2so.Nhan2SoViewModel;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import nhan2so.InputData;
-import nhan2so.InputInterface;
-import nhan2so.Nhan2So;
-import nhan2so.Nhan2SoUseCaseControl;
+import usecases.nhan2so.InputData;
+import usecases.nhan2so.InputInterface;
+import entities.nhan2so.Nhan2So;
+import usecases.nhan2so.Nhan2SoUseCaseControl;
 
 @WebServlet("/nhan2so")
 public class Nhan2SoControllerServlet extends HttpServlet{

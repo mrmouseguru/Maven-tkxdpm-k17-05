@@ -1,10 +1,11 @@
-package frameworks.desktop;
+package frameworks.desktop.nhan2so;
 
 import javax.swing.JOptionPane;
 
-import adapters.Nhan2SoViewModel;
+import interfaceadapters.nhan2so.Nhan2SoViewModel;
+import frameworks.desktop.Subscriber;
 
-public class ResultDialogView implements Subscriber{
+public class ResultDialogView implements Subscriber {
 	private Nhan2SoViewModel model;
 	
 	
