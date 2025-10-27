@@ -1,8 +1,8 @@
 package adapters;
 
 import api.Nhan2soResponse;
-import nhan2so.OutputData;
-import nhan2so.OutputInterface;
+import tinhtoan2so.nhan2so.OutputData;
+import tinhtoan2so.nhan2so.OutputInterface;
 
 public class Nhan2SoPresenterAPI implements OutputInterface {
 

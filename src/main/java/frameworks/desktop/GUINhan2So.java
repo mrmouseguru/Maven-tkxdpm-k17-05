@@ -13,8 +13,8 @@ import adapters.InputDTO;
 import adapters.Nhan2SoController;
 import adapters.Nhan2SoPresenter;
 import adapters.Nhan2SoViewModel;
-import nhan2so.Nhan2So;
-import nhan2so.Nhan2SoUseCaseControl;
+import tinhtoan2so.nhan2so.Nhan2So;
+import tinhtoan2so.nhan2so.Nhan2SoUseCaseControl;
 
 public class GUINhan2So extends JFrame{
 	

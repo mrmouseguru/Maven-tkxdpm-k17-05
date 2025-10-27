@@ -1,4 +1,4 @@
-package nhan2so;
+package tinhtoan2so.nhan2so;
 
 public class InputData {
 	public int num1;

@@ -11,10 +11,10 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import nhan2so.InputData;
-import nhan2so.InputInterface;
-import nhan2so.Nhan2So;
-import nhan2so.Nhan2SoUseCaseControl;
+import tinhtoan2so.nhan2so.InputData;
+import tinhtoan2so.nhan2so.InputInterface;
+import tinhtoan2so.nhan2so.Nhan2So;
+import tinhtoan2so.nhan2so.Nhan2SoUseCaseControl;
 
 @WebServlet("/nhan2so")
 public class Nhan2SoControllerServlet extends HttpServlet{

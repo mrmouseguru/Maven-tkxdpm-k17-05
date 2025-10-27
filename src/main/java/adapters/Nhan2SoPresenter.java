@@ -1,7 +1,7 @@
 package adapters;
 
-import nhan2so.OutputData;
-import nhan2so.OutputInterface;
+import tinhtoan2so.nhan2so.OutputData;
+import tinhtoan2so.nhan2so.OutputInterface;
 
 public class Nhan2SoPresenter implements OutputInterface{
 	private Nhan2SoViewModel model;
@@ -21,7 +21,13 @@ public class Nhan2SoPresenter implements OutputInterface{
 	@Override
 	public void present(OutputData outData) {
 		//model = new Nhan2SoViewModel();
+		if(outData.errorMessage.length() > 0) {
+			model.errorMessage = outData.errorMessage;
+			model.result = null;
+			return;
+		}
 		model.result = String.valueOf(outData.result);
+		
 	}
 
 }

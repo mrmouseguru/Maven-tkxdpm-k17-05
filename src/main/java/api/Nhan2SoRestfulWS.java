@@ -7,10 +7,10 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
-import nhan2so.InputData;
-import nhan2so.InputInterface;
-import nhan2so.Nhan2So;
-import nhan2so.Nhan2SoUseCaseControl;
+import tinhtoan2so.nhan2so.InputData;
+import tinhtoan2so.nhan2so.InputInterface;
+import tinhtoan2so.nhan2so.Nhan2So;
+import tinhtoan2so.nhan2so.Nhan2SoUseCaseControl;
 
 @Path("/nhan2so")
 @Consumes(MediaType.APPLICATION_JSON)

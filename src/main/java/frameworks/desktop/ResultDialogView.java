@@ -16,10 +16,19 @@ public class ResultDialogView implements Subscriber{
 	
 	@Override
 	public void update() {
+		if(model.result != null) {
+			JOptionPane.
+			showInternalMessageDialog(null, 
+					"Result: " +model.result);
+			return;
+		}
 		
-		JOptionPane.
-		showInternalMessageDialog(null, 
-				"Result: " +model.result);
+		JOptionPane.showMessageDialog(null, model.errorMessage);
+		
+		
+		
+		
+		
 		
 	}
 
