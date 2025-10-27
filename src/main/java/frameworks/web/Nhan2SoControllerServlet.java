@@ -40,6 +40,7 @@ public class Nhan2SoControllerServlet extends HttpServlet{
 		
 		inBoundary.execute(inData);
 		
+		//Web
 		//đẩy Model qua 
 		//cho View - result.jsp
 		req.setAttribute("model", model);

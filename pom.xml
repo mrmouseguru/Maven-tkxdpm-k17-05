@@ -40,6 +40,35 @@
 			<scope>test</scope>
 		</dependency>
 		<!--thẻ khác-->
+		
+		<!--api-->
+        <dependency>
+			<groupId>jakarta.ws.rs</groupId>
+			<artifactId>jakarta.ws.rs-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.glassfish.jersey.containers</groupId>
+			<artifactId>jersey-container-servlet</artifactId>
+			<version>3.1.11</version>
+		</dependency>
+
+
+		<!-- (Tùy chọn) JSON support bằng JSON-B -->
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-json-binding</artifactId>
+			<version>3.1.11</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.glassfish.jersey.inject</groupId>
+			<artifactId>jersey-hk2</artifactId>
+			<version>3.1.11</version>
+		</dependency>
+		
+		
 	</dependencies>
 	<build>
 		<finalName>tkxdpm-k17-05</finalName>
